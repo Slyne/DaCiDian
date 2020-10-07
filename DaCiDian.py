@@ -35,3 +35,4 @@ for l in open(word_to_syllable_file, "r", encoding="utf-8"): # "15	YI_1 WU_3;YAO
 			phones[-1] = phones[-1]+'_'+tone
 			phone_seq.extend(phones)
 		out.write(word + '\t' + ' '.join(phone_seq) + '\n')
+out.close()
